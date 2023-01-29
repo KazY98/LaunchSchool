@@ -32,4 +32,3 @@ p advice.match?('Dino')
 
 # Question 5
 
-p 12 % 4
