@@ -32,4 +32,35 @@ p advice.match?('Dino')
 
 # Question 5
 
-test
+flintstones = ["Fred", "Barney", "Wilma", "Betty", "BamBam", "Pebbles"]
+# %w(Fred Barney ...)
+
+
+# Question 6
+
+flintstones = %w(Fred Barney Wilma Betty BamBam Pebbles) + ['Dino']
+# + ["Dino"]
+# << "Dino"
+
+
+# Question 7
+
+# .concat(%w(a b c))
+
+
+# Question 8
+
+advice = "Few things in life are as important as house training your pet dinosaur."
+advice.slice!(0..37)  # advice.index('house')
+# slice wouldn't change the original obj advice
+
+
+# Question 9
+statement = "The Flintstones Rock!"
+# statement.count('t')
+
+
+# Question 10
+title = "Flintstone Family Members"
+# title.center(40)
+
