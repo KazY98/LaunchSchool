@@ -60,30 +60,50 @@ def reverse(arr)
   arr.each_with_object([]) { |num, obj| obj.prepend(num) }
 end
 
-=end
+
 
 # 6:
 
+def merge(arr1, arr2)
+  combined_arr = []
+  arr1.each { |num| combined_arr << num if !combined_arr.include?(num) }
+  arr2.each { |num| combined_arr << num if !combined_arr.include?(num) }
+  combined_arr
+end
+
+def merge(arr1, arr2)
+  arr1 | arr2
+end
 
 
+# 7:
+
+def halvsies(arr)
+  cut = (arr.length / 2) - 1 if arr.length % 2 == 0
+  cut = arr.length / 2 if arr.length % 2 != 0
+  [arr[0..cut],arr[(cut + 1)..-1]]
+end
 
 
+# 8:
+
+def find_dup(arr)
+  arr.each do |num|
+    return num if arr.count(num) > 1
+  end
+end
 
 
+# 9:
+
+def include?(arr, srch)
+  arr.any?(srch)  
+end
 
 
+# 10:
 
+# array2 would be affected by upcase! because the str objects in
+# array2 reference the same objects as array1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+=end
